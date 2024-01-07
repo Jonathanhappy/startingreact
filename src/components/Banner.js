@@ -1,10 +1,13 @@
 // @flow
 import * as React from 'react';
-type Props = {
-  
-};
-export function Banner(props: Props) {
+import logo from '../assets/logo.png';
+import '../styles/Banner.css';
+export function Banner() {
+  const title = 'Starting Mag'
   return (
-      <h1>La maison jungle</h1>
+    <div className='headerbannier'>
+      <img src={logo} alt='startingmag' className='img-logo' />
+      <h1 className='headertitle'>{title}</h1>
+    </div>
   );
 };
